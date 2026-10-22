@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#201c18">
+  <meta name="description" content="Discover delicious food, explore our menu and reserve your table for a memorable dining experience.">
+
+  <title>Savor | A Table Worth Gathering Around</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">savor<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Toggle navigation" aria-expanded="false"
+        aria-controls="navLinks">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#story">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#visit">Visit Us</a>
+        <a href="#booking" class="nav-cta">Book a Table ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content container">
+        <span class="eyebrow light">GOOD FOOD. GOOD COMPANY.</span>
+
+        <h1>Come hungry.<br>Leave <em>happy.</em></h1>
+
+        <p>
+          Beautifully prepared food, a welcoming atmosphere,
+          and moments you'll want to come back for.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-gold">Explore Our Menu ↗</a>
+          <a href="#booking" class="btn btn-outline">Reserve Your Table</a>
+        </div>
+
+        <div class="hero-note">
+          <span class="gold-dot"></span>
+          Your next favourite meal is waiting.
+        </div>
+      </div>
+
+      <a href="#story" class="scroll-cue">SCROLL TO DISCOVER ↓</a>
+    </section>
+
+    <!-- Highlights -->
+    <section class="highlights">
+      <div class="container highlight-grid">
+        <div>
+          <span class="highlight-icon">✳</span>
+          <h3>Freshly Prepared</h3>
+          <p>Made with care, served with love.</p>
+        </div>
+        <div>
+          <span class="highlight-icon">♨</span>
+          <h3>Full of Flavour</h3>
+          <p>Food worth slowing down for.</p>
+        </div>
+        <div>
+          <span class="highlight-icon">♡</span>
+          <h3>Made for Sharing</h3>
+          <p>Good times are better together.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story -->
+    <section class="section story-section" id="story">
+      <div class="container story-grid">
+        <div class="story-image">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=85"
+            alt="Beautifully presented food on a restaurant table"
+            loading="lazy">
+          <div class="image-note">
+            <span>MADE WITH HEART</span>
+            <strong>Every plate tells a story.</strong>
+          </div>
+        </div>
+
+        <div class="story-copy">
+          <span class="eyebrow">A LITTLE ABOUT US</span>
+          <h2>More than a meal.<br><em>A feeling.</em></h2>
+          <p>
+            We believe the best moments happen around a table.
+            From the first bite to the last conversation, we're
+            here to make every visit feel special.
+          </p>
+          <p>
+            Come by for a casual lunch, bring your favourite
+            people for dinner, or make your next celebration
+            one to remember.
+          </p>
+          <a href="#booking" class="text-link">Come experience it →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow">GOOD THINGS ON THE TABLE</span>
+          <h2>A taste of <em>what's cooking.</em></h2>
+          <p>A few guest favourites to get you started.</p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="dish-card">
+            <div class="dish-image">
+              <img
+                src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=85"
+                alt="Fresh colourful salad bowl" loading="lazy">
+              <span class="dish-tag">FRESH PICK</span>
+            </div>
+            <div class="dish-info">
+              <div class="dish-title">
+                <h3>Garden Fresh Bowl</h3>
+                <span class="price">₹249</span>
+              </div>
+              <p>A fresh, colourful bowl bursting with flavour.</p>
+            </div>
+          </article>
+
+          <article class="dish-card">
+            <div class="dish-image">
+              <img
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=85"
+                alt="Freshly baked pizza with toppings" loading="lazy">
+              <span class="dish-tag">CROWD FAVOURITE</span>
+            </div>
+            <div class="dish-info">
+              <div class="dish-title">
+                <h3>Signature Pizza</h3>
+                <span class="price">₹349</span>
+              </div>
+              <p>A golden crust topped with delicious goodness.</p>
+            </div>
+          </article>
+
+          <article class="dish-card">
+            <div class="dish-image">
+              <img
+                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=85"
+                alt="Beautifully arranged healthy food bowl" loading="lazy">
+              <span class="dish-tag">CHEF'S PICK</span>
+            </div>
+            <div class="dish-info">
+              <div class="dish-title">
+                <h3>Seasonal Special</h3>
+                <span class="price">₹299</span>
+              </div>
+              <p>A delicious seasonal creation worth discovering.</p>
+            </div>
+          </article>
+        </div>
+
+        <p class="menu-disclaimer">
+          Sample menu for the website demo. Replace dishes and
+          prices with the restaurant's actual menu.
+        </p>
+
+        <div class="center-action">
+          <a class="btn btn-dark" href="#booking">Come Taste the Difference ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience banner -->
+    <section class="experience">
+      <div class="experience-overlay"></div>
+      <div class="container experience-content">
+        <span class="eyebrow light">YOUR TABLE IS WAITING</span>
+        <h2>Great food tastes<br>better <em>together.</em></h2>
+        <p>Date night, family dinner, or a spontaneous get-together.</p>
+        <a href="#booking" class="btn btn-gold">Let's Make a Plan ↗</a>
+      </div>
+    </section>
+
+    <!-- Visit us -->
+    <section class="section visit-section" id="visit">
+      <div class="container visit-grid">
+        <div>
+          <span class="eyebrow">COME ON IN</span>
+          <h2>Find your way<br><em>to the table.</em></h2>
+          <p>
+            Good food is closer than you think.
+            Plan a visit and let us take care of the rest.
+          </p>
+          <a
+            href="https://share.google/HGtZ9Aet083nPPx9G"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-link">
+            Find us on Google Maps ↗
+          </a>
+        </div>
+
+        <div class="visit-card">
+          <div class="visit-item">
+            <span class="visit-icon">⌖</span>
+            <div>
+              <h3>Find Us</h3>
+              <p>Open our Google listing for the location and directions.</p>
+            </div>
+          </div>
+          <div class="visit-item">
+            <span class="visit-icon">◷</span>
+            <div>
+              <h3>Opening Hours</h3>
+              <p>Please check our Google listing for current hours.</p>
+            </div>
+          </div>
+          <div class="visit-item">
+            <span class="visit-icon">♡</span>
+            <div>
+              <h3>Bring Your People</h3>
+              <p>Choose your date and preferred time below.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking form -->
+    <section class="section booking-section" id="booking">
+      <div class="container booking-grid">
+
+        <div class="booking-copy">
+          <span class="eyebrow light">SAVE YOUR SEAT</span>
+          <h2>Let's make it<br><em>a date.</em></h2>
+          <p>
+            Tell us when you're coming and how many people
+            are joining. We'll help you plan a lovely visit.
+          </p>
+          <div class="booking-promise">
+            <span>✦</span>
+            Simple booking. Better evenings.
+          </div>
+        </div>
+
+        <div class="booking-card">
+          <h3>Book your table</h3>
+          <p class="form-intro">Fill in your details to get started.</p>
+
+          <form id="bookingForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your name *</label>
+                <input
+                  type="text" id="name" name="name"
+                  placeholder="e.g. Rahul Sharma"
+                  autocomplete="name" required minlength="2">
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone number *</label>
+                <input
+                  type="tel" id="phone" name="phone"
+                  placeholder="Your contact number"
+                  autocomplete="tel" required
+                  pattern="[0-9+() -]{8,18}">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Date *</label>
+                <input type="date" id="date" name="date" required>
+              </div>
+
+              <div class="form-group">
+                <label for="time">Preferred time *</label>
+                <select id="time" name="time" required>
+                  <option value="">Choose a time</option>
+                  <option>12:00 PM</option>
+                  <option>12:30 PM</option>
+                  <option>01:00 PM</option>
+                  <option>01:30 PM</option>
+                  <option>02:00 PM</option>
+                  <option>06:00 PM</option>
+                  <option>06:30 PM</option>
+                  <option>07:00 PM</option>
+                  <option>07:30 PM</option>
+                  <option>08:00 PM</option>
+                  <option>08:30 PM</option>
+                  <option>09:00 PM</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="guests">Number of guests *</label>
+              <select id="guests" name="guests" required>
+                <option value="1">1 guest</option>
+                <option value="2" selected>2 guests</option>
+                <option value="3">3 guests</option>
+                <option value="4">4 guests</option>
+                <option value="5">5 guests</option>
+                <option value="6">6 guests</option>
+                <option value="7">7 guests</option>
+                <option value="8">8 guests</option>
+                <option value="9+">9+ guests</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="requests">Special requests (optional)</label>
+              <textarea id="requests" name="requests"
+                rows="3" placeholder="Birthday, seating preference, etc."></textarea>
+            </div>
+
+            <button class="btn btn-gold submit-btn" type="submit">
+              Request a Reservation <span>↗</span>
+            </button>
+
+            <p class="form-footnote">
+              Demo form: your request is not sent to the restaurant
+              until a booking service is connected.
+            </p>
+
+            <div id="formMessage" class="form-message"
+              role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-main">
+      <div>
+        <a href="#home" class="logo footer-logo">savor<span>.</span></a>
+        <p>Come for the food. Stay for the feeling.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#story">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#visit">Visit Us</a>
+        <a href="#booking">Book a Table</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> Savor. Replace with the restaurant's real name.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+</body>
+</html>
