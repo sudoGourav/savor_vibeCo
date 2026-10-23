@@ -1020,3 +1020,18 @@ p {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* Supabase authentication and booking history */
+.auth-panel { margin: 0 0 26px; padding: 20px; border: 1px solid var(--border); border-radius: 4px; background: #fbf8f2; }
+.auth-panel h4, .my-bookings h4 { font-family: var(--serif); font-size: 1.25rem; margin-bottom: 6px; }
+.auth-help { font-size: .82rem; margin-bottom: 15px; overflow-wrap: anywhere; }
+.auth-actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.btn-outline-dark { border-color: var(--dark); color: var(--dark); background: transparent; }
+.btn-outline-dark:hover { background: var(--dark); color: white; }
+.auth-logout { border: 0; background: transparent; cursor: pointer; }
+.my-bookings { margin: 0 0 26px; padding: 20px; border: 1px solid var(--border); border-radius: 4px; }
+.booking-history-item { padding: 12px 0; border-top: 1px solid var(--border); font-size: .84rem; }
+.booking-history-item strong { display: block; }
+.booking-status { display: inline-block; margin-top: 4px; font-size: .75rem; font-weight: 700; text-transform: capitalize; }
+[hidden] { display: none !important; }

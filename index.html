@@ -14,6 +14,8 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 
@@ -269,6 +271,32 @@
           <h3>Book your table</h3>
           <p class="form-intro">Fill in your details to get started.</p>
 
+          <div id="authPanel" class="auth-panel">
+            <h4>Sign in to manage your bookings</h4>
+            <p class="auth-help">Create an account or sign in before requesting a reservation.</p>
+            <form id="authForm">
+              <div class="form-group">
+                <label for="authEmail">Email address *</label>
+                <input type="email" id="authEmail" autocomplete="email" required placeholder="you@example.com">
+              </div>
+              <div class="form-group">
+                <label for="authPassword">Password *</label>
+                <input type="password" id="authPassword" autocomplete="current-password" minlength="6" required placeholder="At least 6 characters">
+              </div>
+              <div class="auth-actions">
+                <button class="btn btn-dark" type="submit" id="signInBtn">Sign in</button>
+                <button class="btn btn-outline-dark" type="button" id="signUpBtn">Create account</button>
+                <button class="text-link auth-logout" type="button" id="signOutBtn" hidden>Sign out</button>
+              </div>
+              <p id="authMessage" class="form-message" role="status" aria-live="polite"></p>
+            </form>
+            <p id="signedInAs" class="auth-help" hidden></p>
+          </div>
+          <section id="myBookings" class="my-bookings" hidden>
+            <h4>Your reservations</h4>
+            <div id="bookingList"></div>
+          </section>
+
           <form id="bookingForm">
             <div class="form-row">
               <div class="form-group">
@@ -341,8 +369,7 @@
             </button>
 
             <p class="form-footnote">
-              Demo form: your request is not sent to the restaurant
-              until a booking service is connected.
+              Reservation requests are saved to the database. Your table is not confirmed until the restaurant approves it.
             </p>
 
             <div id="formMessage" class="form-message"
